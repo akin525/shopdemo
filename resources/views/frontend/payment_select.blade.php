@@ -64,7 +64,7 @@
                                                 <label class="aiz-megabox d-block mb-3">
                                                     <input value="paypal" class="online_payment" type="radio" name="payment_option" checked>
                                                     <span class="d-block p-3 aiz-megabox-elem">
-                                                        <img src="{{ static_asset('assets/img/cards/paypal.png')}}" class="img-fluid mb-2">
+                                                        <img src="{{ asset('assets/img/cards/paypal.png')}}" class="img-fluid mb-2">
                                                         <span class="d-block text-center">
                                                             <span class="d-block fw-600 fs-15">{{ translate('Paypal')}}</span>
                                                         </span>
@@ -77,7 +77,7 @@
                                                 <label class="aiz-megabox d-block mb-3">
                                                     <input value="stripe" class="online_payment" type="radio" name="payment_option" checked>
                                                     <span class="d-block p-3 aiz-megabox-elem">
-                                                        <img src="{{ static_asset('assets/img/cards/stripe.png')}}" class="img-fluid mb-2">
+                                                        <img src="{{ asset('assets/img/cards/stripe.png')}}" class="img-fluid mb-2">
                                                         <span class="d-block text-center">
                                                             <span class="d-block fw-600 fs-15">{{ translate('Stripe')}}</span>
                                                         </span>
@@ -90,7 +90,7 @@
                                                 <label class="aiz-megabox d-block mb-3">
                                                     <input value="mercadopago" class="online_payment" type="radio" name="payment_option" checked>
                                                     <span class="d-block p-3 aiz-megabox-elem">
-                                                        <img src="{{ static_asset('assets/img/cards/mercadopago.png')}}" class="img-fluid mb-2">
+                                                        <img src="{{ asset('assets/img/cards/mercadopago.png')}}" class="img-fluid mb-2">
                                                         <span class="d-block text-center">
                                                             <span class="d-block fw-600 fs-15">{{ translate('Mercadopago')}}</span>
                                                         </span>
@@ -103,7 +103,7 @@
                                                 <label class="aiz-megabox d-block mb-3">
                                                     <input value="sslcommerz" class="online_payment" type="radio" name="payment_option" checked>
                                                     <span class="d-block p-3 aiz-megabox-elem">
-                                                        <img src="{{ static_asset('assets/img/cards/sslcommerz.png')}}" class="img-fluid mb-2">
+                                                        <img src="{{ asset('assets/img/cards/sslcommerz.png')}}" class="img-fluid mb-2">
                                                         <span class="d-block text-center">
                                                             <span class="d-block fw-600 fs-15">{{ translate('sslcommerz')}}</span>
                                                         </span>
@@ -116,7 +116,7 @@
                                                 <label class="aiz-megabox d-block mb-3">
                                                     <input value="instamojo" class="online_payment" type="radio" name="payment_option" checked>
                                                     <span class="d-block p-3 aiz-megabox-elem">
-                                                        <img src="{{ static_asset('assets/img/cards/instamojo.png')}}" class="img-fluid mb-2">
+                                                        <img src="{{ asset('assets/img/cards/instamojo.png')}}" class="img-fluid mb-2">
                                                         <span class="d-block text-center">
                                                             <span class="d-block fw-600 fs-15">{{ translate('Instamojo')}}</span>
                                                         </span>
@@ -129,7 +129,7 @@
                                                 <label class="aiz-megabox d-block mb-3">
                                                     <input value="razorpay" class="online_payment" type="radio" name="payment_option" checked>
                                                     <span class="d-block p-3 aiz-megabox-elem">
-                                                        <img src="{{ static_asset('assets/img/cards/rozarpay.png')}}" class="img-fluid mb-2">
+                                                        <img src="{{ asset('assets/img/cards/rozarpay.png')}}" class="img-fluid mb-2">
                                                         <span class="d-block text-center">
                                                             <span class="d-block fw-600 fs-15">{{ translate('Razorpay')}}</span>
                                                         </span>
@@ -142,9 +142,22 @@
                                                 <label class="aiz-megabox d-block mb-3">
                                                     <input value="paystack" class="online_payment" type="radio" name="payment_option" checked>
                                                     <span class="d-block p-3 aiz-megabox-elem">
-                                                        <img src="{{ static_asset('assets/img/cards/paystack.png')}}" class="img-fluid mb-2">
+                                                        <img src="{{ asset('assets/img/cards/paystack.png')}}" class="img-fluid mb-2">
                                                         <span class="d-block text-center">
                                                             <span class="d-block fw-600 fs-15">{{ translate('Paystack')}}</span>
+                                                        </span>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        @endif
+                                            @if(get_setting('monnify') == 1)
+                                            <div class="col-6 col-md-4">
+                                                <label class="aiz-megabox d-block mb-3">
+                                                    <input value="monnify" class="online_payment" type="radio" name="payment_option" checked>
+                                                    <span class="d-block p-3 aiz-megabox-elem">
+                                                        <img src="{{ asset('assets/img/cards/monnify.svg')}}" class="img-fluid mb-2">
+                                                        <span class="d-block text-center">
+                                                            <span class="d-block fw-600 fs-15">{{ translate('Monnify')}}</span>
                                                         </span>
                                                     </span>
                                                 </label>
@@ -155,7 +168,7 @@
                                                 <label class="aiz-megabox d-block mb-3">
                                                     <input value="voguepay" class="online_payment" type="radio" name="payment_option" checked>
                                                     <span class="d-block p-3 aiz-megabox-elem">
-                                                        <img src="{{ static_asset('assets/img/cards/vogue.png')}}" class="img-fluid mb-2">
+                                                        <img src="{{ asset('assets/img/cards/vogue.png')}}" class="img-fluid mb-2">
                                                         <span class="d-block text-center">
                                                             <span class="d-block fw-600 fs-15">{{ translate('VoguePay')}}</span>
                                                         </span>
@@ -168,7 +181,7 @@
                                                 <label class="aiz-megabox d-block mb-3">
                                                     <input value="payhere" class="online_payment" type="radio" name="payment_option" checked>
                                                     <span class="d-block p-3 aiz-megabox-elem">
-                                                        <img src="{{ static_asset('assets/img/cards/payhere.png')}}" class="img-fluid mb-2">
+                                                        <img src="{{ asset('assets/img/cards/payhere.png')}}" class="img-fluid mb-2">
                                                         <span class="d-block text-center">
                                                             <span class="d-block fw-600 fs-15">{{ translate('payhere')}}</span>
                                                         </span>
@@ -181,7 +194,7 @@
                                                 <label class="aiz-megabox d-block mb-3">
                                                     <input value="ngenius" class="online_payment" type="radio" name="payment_option" checked>
                                                     <span class="d-block p-3 aiz-megabox-elem">
-                                                        <img src="{{ static_asset('assets/img/cards/ngenius.png')}}" class="img-fluid mb-2">
+                                                        <img src="{{ asset('assets/img/cards/ngenius.png')}}" class="img-fluid mb-2">
                                                         <span class="d-block text-center">
                                                             <span class="d-block fw-600 fs-15">{{ translate('ngenius')}}</span>
                                                         </span>
@@ -194,7 +207,7 @@
                                                 <label class="aiz-megabox d-block mb-3">
                                                     <input value="iyzico" class="online_payment" type="radio" name="payment_option" checked>
                                                     <span class="d-block p-3 aiz-megabox-elem">
-                                                        <img src="{{ static_asset('assets/img/cards/iyzico.png')}}" class="img-fluid mb-2">
+                                                        <img src="{{ asset('assets/img/cards/iyzico.png')}}" class="img-fluid mb-2">
                                                         <span class="d-block text-center">
                                                             <span class="d-block fw-600 fs-15">{{ translate('Iyzico')}}</span>
                                                         </span>
@@ -207,7 +220,7 @@
                                                 <label class="aiz-megabox d-block mb-3">
                                                     <input value="nagad" class="online_payment" type="radio" name="payment_option" checked>
                                                     <span class="d-block p-3 aiz-megabox-elem">
-                                                        <img src="{{ static_asset('assets/img/cards/nagad.png')}}" class="img-fluid mb-2">
+                                                        <img src="{{ asset('assets/img/cards/nagad.png')}}" class="img-fluid mb-2">
                                                         <span class="d-block text-center">
                                                             <span class="d-block fw-600 fs-15">{{ translate('Nagad')}}</span>
                                                         </span>
@@ -220,7 +233,7 @@
                                                 <label class="aiz-megabox d-block mb-3">
                                                     <input value="bkash" class="online_payment" type="radio" name="payment_option" checked>
                                                     <span class="d-block p-3 aiz-megabox-elem">
-                                                        <img src="{{ static_asset('assets/img/cards/bkash.png')}}" class="img-fluid mb-2">
+                                                        <img src="{{ asset('assets/img/cards/bkash.png')}}" class="img-fluid mb-2">
                                                         <span class="d-block text-center">
                                                             <span class="d-block fw-600 fs-15">{{ translate('Bkash')}}</span>
                                                         </span>
@@ -233,7 +246,7 @@
                                                 <label class="aiz-megabox d-block mb-3">
                                                     <input value="aamarpay" class="online_payment" type="radio" name="payment_option" checked>
                                                     <span class="d-block p-3 aiz-megabox-elem">
-                                                        <img src="{{ static_asset('assets/img/cards/aamarpay.png')}}" class="img-fluid mb-2">
+                                                        <img src="{{ asset('assets/img/cards/aamarpay.png')}}" class="img-fluid mb-2">
                                                         <span class="d-block text-center">
                                                             <span class="d-block fw-600 fs-15">{{ translate('Aamarpay')}}</span>
                                                         </span>
@@ -246,7 +259,7 @@
                                                 <label class="aiz-megabox d-block mb-3">
                                                     <input value="authorizenet" class="online_payment" type="radio" name="payment_option" checked>
                                                     <span class="d-block p-3 aiz-megabox-elem">
-                                                        <img src="{{ static_asset('assets/img/cards/authorizenet.png')}}" class="img-fluid mb-2">
+                                                        <img src="{{ asset('assets/img/cards/authorizenet.png')}}" class="img-fluid mb-2">
                                                         <span class="d-block text-center">
                                                             <span class="d-block fw-600 fs-15">{{ translate('Authorize Net')}}</span>
                                                         </span>
@@ -259,7 +272,7 @@
                                                 <label class="aiz-megabox d-block mb-3">
                                                     <input value="payku" class="online_payment" type="radio" name="payment_option" checked>
                                                     <span class="d-block p-3 aiz-megabox-elem">
-                                                        <img src="{{ static_asset('assets/img/cards/payku.png')}}" class="img-fluid mb-2">
+                                                        <img src="{{ asset('assets/img/cards/payku.png')}}" class="img-fluid mb-2">
                                                         <span class="d-block text-center">
                                                             <span class="d-block fw-600 fs-15">{{ translate('Payku')}}</span>
                                                         </span>
@@ -273,7 +286,7 @@
                                                     <label class="aiz-megabox d-block mb-3">
                                                         <input value="mpesa" class="online_payment" type="radio" name="payment_option" checked>
                                                         <span class="d-block p-3 aiz-megabox-elem">
-                                                            <img src="{{ static_asset('assets/img/cards/mpesa.png')}}" class="img-fluid mb-2">
+                                                            <img src="{{ asset('assets/img/cards/mpesa.png')}}" class="img-fluid mb-2">
                                                             <span class="d-block text-center">
                                                                 <span class="d-block fw-600 fs-15">{{ translate('mpesa')}}</span>
                                                             </span>
@@ -286,7 +299,7 @@
                                                     <label class="aiz-megabox d-block mb-3">
                                                         <input value="flutterwave" class="online_payment" type="radio" name="payment_option" checked>
                                                         <span class="d-block p-3 aiz-megabox-elem">
-                                                            <img src="{{ static_asset('assets/img/cards/flutterwave.png')}}" class="img-fluid mb-2">
+                                                            <img src="{{ asset('assets/img/cards/flutterwave.png')}}" class="img-fluid mb-2">
                                                             <span class="d-block text-center">
                                                                 <span class="d-block fw-600 fs-15">{{ translate('flutterwave')}}</span>
                                                             </span>
@@ -299,7 +312,7 @@
                                                     <label class="aiz-megabox d-block mb-3">
                                                         <input value="payfast" class="online_payment" type="radio" name="payment_option" checked>
                                                         <span class="d-block p-3 aiz-megabox-elem">
-                                                        <img src="{{ static_asset('assets/img/cards/payfast.png')}}" class="img-fluid mb-2">
+                                                        <img src="{{ asset('assets/img/cards/payfast.png')}}" class="img-fluid mb-2">
                                                         <span class="d-block text-center">
                                                             <span class="d-block fw-600 fs-15">{{ translate('payfast')}}</span>
                                                         </span>
@@ -313,7 +326,7 @@
                                                 <label class="aiz-megabox d-block mb-3">
                                                     <input value="paytm" class="online_payment" type="radio" name="payment_option" checked>
                                                     <span class="d-block p-3 aiz-megabox-elem">
-                                                        <img src="{{ static_asset('assets/img/cards/paytm.jpg')}}" class="img-fluid mb-2">
+                                                        <img src="{{ asset('assets/img/cards/paytm.jpg')}}" class="img-fluid mb-2">
                                                         <span class="d-block text-center">
                                                             <span class="d-block fw-600 fs-15">{{ translate('Paytm')}}</span>
                                                         </span>
@@ -326,7 +339,7 @@
                                                 <label class="aiz-megabox d-block mb-3">
                                                     <input value="toyyibpay" class="online_payment" type="radio" name="payment_option" checked>
                                                     <span class="d-block p-3 aiz-megabox-elem">
-                                                        <img src="{{ static_asset('assets/img/cards/toyyibpay.png')}}" class="img-fluid mb-2">
+                                                        <img src="{{ asset('assets/img/cards/toyyibpay.png')}}" class="img-fluid mb-2">
                                                         <span class="d-block text-center">
                                                             <span class="d-block fw-600 fs-15">{{ translate('ToyyibPay')}}</span>
                                                         </span>
@@ -353,7 +366,7 @@
                                                     <label class="aiz-megabox d-block mb-3">
                                                         <input value="cash_on_delivery" class="online_payment" type="radio" name="payment_option" checked>
                                                         <span class="d-block p-3 aiz-megabox-elem">
-                                                            <img src="{{ static_asset('assets/img/cards/cod.png')}}" class="img-fluid mb-2">
+                                                            <img src="{{ asset('assets/img/cards/cod.png')}}" class="img-fluid mb-2">
                                                             <span class="d-block text-center">
                                                                 <span class="d-block fw-600 fs-15">{{ translate('Cash on Delivery')}}</span>
                                                             </span>
@@ -472,7 +485,7 @@
 
         var minimum_order_amount_check = {{ get_setting('minimum_order_amount_check') == 1 ? 1 : 0 }};
         var minimum_order_amount = {{ get_setting('minimum_order_amount_check') == 1 ? get_setting('minimum_order_amount') : 0 }};
-        
+
         function use_wallet(){
             $('input[name=payment_option]').val('wallet');
             if($('#agree_checkbox').is(":checked")){;

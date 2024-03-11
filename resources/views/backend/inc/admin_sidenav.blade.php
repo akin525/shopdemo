@@ -5,7 +5,7 @@
                 @if(get_setting('system_logo_white') != null)
                     <img class="mw-100" src="{{ uploaded_asset(get_setting('system_logo_white')) }}" class="brand-icon" alt="{{ get_setting('site_name') }}">
                 @else
-                    <img class="mw-100" src="{{ static_asset('assets/img/logo.png') }}" class="brand-icon" alt="{{ get_setting('site_name') }}">
+                    <img class="mw-100" src="{{ asset('assets/img/logo.png') }}" class="brand-icon" alt="{{ get_setting('site_name') }}">
                 @endif
             </a>
         </div>
@@ -472,7 +472,7 @@
                         </ul>
                     </li>
                 @endif
-                
+
                 <!--Blog System-->
                 @if(Auth::user()->user_type == 'admin' || in_array('23', json_decode(Auth::user()->staff->role->permissions)))
                     <li class="aiz-side-nav-item">

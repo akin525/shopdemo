@@ -1,7 +1,7 @@
 @php
     $best_selers = Cache::remember('best_selers', 86400, function () {
         return \App\Models\Shop::where('verification_status', 1)->orderBy('num_of_sale', 'desc')->take(20)->get();
-    });   
+    });
 @endphp
 
 @if (get_setting('vendor_system_activation') == 1)
@@ -22,8 +22,8 @@
                                     <div class="col-4">
                                         <a href="{{ route('shop.visit', $seller->slug) }}" class="d-block p-3">
                                             <img
-                                                src="{{ static_asset('assets/img/placeholder.jpg') }}"
-                                                data-src="@if ($seller->logo !== null) {{ uploaded_asset($seller->logo) }} @else {{ static_asset('assets/img/placeholder.jpg') }} @endif"
+                                                src="{{ asset('assets/img/placeholder.jpg') }}"
+                                                data-src="@if ($seller->logo !== null) {{ uploaded_asset($seller->logo) }} @else {{ asset('assets/img/placeholder.jpg') }} @endif"
                                                 alt="{{ $seller->name }}"
                                                 class="img-fluid lazyload"
                                             >

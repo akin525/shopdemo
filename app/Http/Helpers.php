@@ -587,7 +587,7 @@ if (!function_exists('my_asset')) {
     }
 }
 
-if (!function_exists('static_asset')) {
+if (!function_exists('asset')) {
     /**
      * Generate an asset path for the application.
      *
@@ -595,7 +595,7 @@ if (!function_exists('static_asset')) {
      * @param bool|null $secure
      * @return string
      */
-    function static_asset($path, $secure = null)
+    function asset($path, $secure = null)
     {
         return app('url')->asset('public/' . $path, $secure);
     }
